@@ -10,14 +10,14 @@ git config --global user.email "you@example.com"
 
 ## 📁 Starting a Project
 
-### Initialize Git
+### ✅ Initialize Git
 
 ```bash
 git init
 ```
 ➡️ Start tracking a local project with Git.
 
-### Clone a GitHub Repository
+### ✅ Clone a GitHub Repository
 
 ```bash
 git clone <repo-url>
@@ -28,14 +28,14 @@ git clone <repo-url>
 
 ## 📝 Making Changes
 
-### Check Status
+### ✅ Check Status
 
 ```bash
 git status
 ```
 ➡️ See what’s changed and what’s staged.
 
-### Stage Files
+### ✅ Stage Files
 
 ```bash
 git add <file>
@@ -43,14 +43,14 @@ git add .  # Add all files
 ```
 ➡️ Add files to the staging area.
 
-### Commit Changes
+### ✅ Commit Changes
 
 ```bash
 git commit -m "Your commit message"
 ```
 ➡️ Save staged changes with a message.
 
-### View Commit History
+### ✅ View Commit History
 
 ```bash
 git log
@@ -61,14 +61,14 @@ git log
 
 ## 🌐 GitHub Remote Commands
 
-### Add Remote Repository
+### ✅ Add Remote Repository
 
 ```bash
 git remote add origin <repo-url>
 ```
 ➡️ Link your local repo to GitHub.
 
-### Push Changes to GitHub
+### ✅ Push Changes to GitHub
 
 ```bash
 git push -u origin main  # First time
@@ -76,7 +76,7 @@ git push                 # Afterward
 ```
 ➡️ Upload local commits to GitHub.
 
-### Pull Latest Changes
+### ✅ Pull Latest Changes
 
 ```bash
 git pull
@@ -199,8 +199,59 @@ git reset --hard HEAD
 
 ---
 
+## 🧑‍🤝‍🧑 Collaboration
+
+### ✅ Fork a repo on GitHub:
+
+1 ➡️ Click "Fork" on GitHub.
+
+2 ➡️ Clone your forked repo.
+
+3 ➡️ Make changes, push, then make a pull request.
+
+```bash
+git clone <your-fork-url>                          # -> Clone your fork
+git push origin <branch-name>                      # -> Push your changes
+```
+
+---
+
+## 📦 Stashing Changes
+
+### ✅ Stash Uncommitted Work
+
+```bash
+git stash
+```
+
+### ✅ Apply Stashed Changes
+
+```bash
+git stash pop
+```
+
+---
+
+## ✅ Must open example workflow
+<details>
+<summary> ✅ Example Workflow </summary>
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/user/repo.git
+git push -u origin main
+
+```
+
+</details>
+
+---
 
 
+# 👨‍💻 Happy Coding! | ⭐ Star the repo if this helped!
 
 
 
