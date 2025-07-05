@@ -99,6 +99,12 @@ git branch <branch-name>
 git checkout <branch-name>
 ```
 
+### ✅ To rename a branch
+
+```bash
+git branch - M main
+```
+
 ### ✅ Create and switch to new branch
 
 ```bash
@@ -114,6 +120,14 @@ git merge <branch-name>
 ```
 ➡️ Combines changes from another branch into main.
 
+### ✅ Delete a branch
+
+```bash
+git branch -d
+```
+
+
+
 ---
 
 ## 🧹 Clean Up
@@ -122,12 +136,21 @@ git merge <branch-name>
 
 ```bash
 git reset <file>
+git reset
 ```
 
 ### ✅ Undo last commit (keep changes)
 
 ```bash
 git reset --soft HEAD~1
+git reset HEAD~1
+```
+
+### ✅ Undo upto a specific commit(for many commits)
+
+```bash
+git reset <-commit hash->
+git reset--hard <-commit hash->
 ```
 
 ### ✅ Delete a branch
