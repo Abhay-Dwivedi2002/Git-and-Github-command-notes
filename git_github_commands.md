@@ -15,14 +15,14 @@ git config --global user.email "you@example.com"
 ```bash
 git init
 ```
--> Start tracking a local project with Git.
+➡️ Start tracking a local project with Git.
 
 ### Clone a GitHub Repository
 
 ```bash
 git clone <repo-url>
 ```
--> Download a GitHub repository to your local machine.
+➡️ Download a GitHub repository to your local machine.
 
 
 
@@ -33,7 +33,7 @@ git clone <repo-url>
 ```bash
 git status
 ```
--> See what’s changed and what’s staged.
+➡️ See what’s changed and what’s staged.
 
 ### Stage Files
 
@@ -41,22 +41,23 @@ git status
 git add <file>
 git add .  # Add all files
 ```
--> Add files to the staging area.
+➡️ Add files to the staging area.
 
 ### Commit Changes
 
 ```bash
 git commit -m "Your commit message"
 ```
-->Save staged changes with a message.
+➡️ Save staged changes with a message.
 
 ### View Commit History
 
 ```bash
 git log
 ```
--> See list of commits made.
+➡️ See list of commits made.
 
+---
 
 ## 🌐 GitHub Remote Commands
 
@@ -65,20 +66,77 @@ git log
 ```bash
 git remote add origin <repo-url>
 ```
-->Link your local repo to GitHub.
+➡️ Link your local repo to GitHub.
 
 ### Push Changes to GitHub
 ```bash
 git push -u origin main  # First time
 git push                 # Afterward
 ```
--> Upload local commits to GitHub.
+➡️ Upload local commits to GitHub.
 
 ### Pull Latest Changes
 ```bash
 git pull
 ```
--> Download and merge changes from GitHub.
+➡️ Download and merge changes from GitHub.
+
+---
+
+## 🔁 Branching
+
+### ✅ Create a new branch
+
+```bash
+git branch <branch-name>
+```
+
+### ✅ Switch to a branch
+```bash
+git checkout <branch-name>
+```
+
+### ✅ Create and switch to new branch
+```bash
+git checkout -b <branch-name>
+```
+➡️ Use branches to develop features separately.
+
+### ✅ Merge a branch into main
+```bash
+git checkout main
+git merge <branch-name>
+```
+➡️ Combines changes from another branch into main.
+
+---
+
+## 🧹 Clean Up
+
+### ✅ Remove a file from staging
+```bash
+git reset <file>
+```
+
+### ✅ Undo last commit (keep changes)
+```bash
+git reset --soft HEAD~1
+```
+
+### ✅ Delete a branch
+```bash
+git branch -d <branch-name>
+```
+
+---
+
+
+
+
+
+
+
+
 
 
 
