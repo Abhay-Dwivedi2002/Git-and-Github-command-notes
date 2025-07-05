@@ -58,6 +58,31 @@ git log
 -> See list of commits made.
 
 
+## 🌐 GitHub Remote Commands
+
+### Add Remote Repository
+
+```bash
+git remote add origin <repo-url>
+```
+->Link your local repo to GitHub.
+
+### Push Changes to GitHub
+```bash
+git push -u origin main  # First time
+git push                 # Afterward
+```
+-> Upload local commits to GitHub.
+
+### Pull Latest Changes
+```bash
+git pull
+```
+-> Download and merge changes from GitHub.
+
+
+
+
 
 
 
